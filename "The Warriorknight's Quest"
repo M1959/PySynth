@@ -1,0 +1,42 @@
+def display_song():
+    song_title = "The Warriorknight's Quest"
+    artist = "Warriorknight3299"
+    key = "C Major"
+
+    lyrics_with_chords = [
+        # Verse 1
+        {"chords": "C", "lyrics": "At sixty-five, he hung up his tie,"},
+        {"chords": "G", "lyrics": "Dreams of glory lit his sky."},
+        {"chords": "Am", "lyrics": "No gold watch could define his worth,"},
+        {"chords": "F", "lyrics": "He sought the title he’d chased since birth."},
+        {"chords": "C", "lyrics": "Since thirteen, he’s fought the game,"},
+        {"chords": "G", "lyrics": "No coaches, no net to make his name."},
+        {"chords": "Am", "lyrics": "Just the sting of loss, the lessons learned,"},
+        {"chords": "F", "lyrics": "With every move, his fire burned."},
+
+        # Chorus
+        {"chords": "F", "lyrics": "Oh, Warriorknight, they laugh and jeer,"},
+        {"chords": "C", "lyrics": "But they don’t see your vision clear."},
+        {"chords": "G", "lyrics": "Through the years, the board’s been your stage,"},
+        {"chords": "Am", "lyrics": "A timeless battle, a warrior’s age."},
+        {"chords": "F", "lyrics": "You’ll rise, you’ll fight, you’ll stand your ground,"},
+        {"chords": "C", "lyrics": "An International Grandmaster crowned."},
+
+        # Verse 2
+        {"chords": "C", "lyrics": "The young ones mock, with their screens so bright,"},
+        {"chords": "G", "lyrics": "They call him slow, dismiss his fight."},
+        {"chords": "Am", "lyrics": "But they don’t know the tales untold,"},
+        {"chords": "F", "lyrics": "Of sleepless nights and strategies bold."},
+        {"chords": "C", "lyrics": "His hands are worn, but his spirit’s steel,"},
+        {"chords": "G", "lyrics": "Every pawn he moves, the dream is real."},
+        {"chords": "Am", "lyrics": "He sees the endgame, a distant light,"},
+        {"chords": "F", "lyrics": "A promise made in the dead of night."},
+    ]
+
+    # Print the song
+    print(f"{song_title}\nBy {artist}\nKey: {key}\n")
+    for line in lyrics_with_chords:
+        print(f"[{line['chords']}] {line['lyrics']}")
+
+if __name__ == "__main__":
+    display_song()
